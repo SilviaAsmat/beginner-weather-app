@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { MdWbSunny } from "react-icons/md";
+import { MdMyLocation } from "react-icons/md";
 
 type Props = {}
 
@@ -13,6 +14,10 @@ export default function Navbar({}: Props) {
                 <h2 className="text-gray-500 text-3xl">Weather</h2>
                 <MdWbSunny className='text-3xl mt-1 text-yellow-300'/>
             </p>
+            {/* */}
+            <section className="flex gap-2 items-center">
+            <MdMyLocation className="text-2xl text-gray-400 hover:opacity-80 cursor-pointer"/>
+            </section>
         </div>
     </nav>
   );
